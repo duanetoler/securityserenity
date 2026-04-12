@@ -539,7 +539,8 @@ below here about "absolute-form" requests, like what CommVault is using:
 
 Well damn.  Now CommVault is violating RFC-7230 in two different ways:
 
-1.  Missing Host header 2.  Host header is REQUIRED when using absolute-form
+1. Missing Host header
+2. Host header is REQUIRED when using absolute-form
 requests
 
 [Section 5.4](https://www.rfc-editor.org/rfc/rfc7230#section-5.4) also
@@ -610,10 +611,10 @@ If you configure an IPS exception to allow this traffic:
 
 - You are allowing a known-malformed HTTP application through your
 inspection engine - You are allowing uninspected traffic to the most
-sensitive service on your network
-  (backups hold credentials and data for every host they touch, at highest
-privilege) - You are enabling the exact malware scenario called out in RFC
-7230 and RFC 9110
+sensitive service on your network (backups hold credentials and data for
+every host they touch, at highest privilege)
+- You are enabling the exact malware scenario called out in RFC 7230 and
+RFC 9110
 
 Unfortunately for CommVault, the malware warnings in RFC 7230 and 9110
 turned out to be somewhat prescient.  Last year, CISA added [CommVault CVEs](https://cvefeed.io/cisakev/cisa-known-exploited-vulnerability-catalog?search=commvault&ransomware=&order_by=date_added)
@@ -622,10 +623,10 @@ scoring a **10.0**.  Other CVEs include: - CVE-2025-57788: Unauthenticated
 API calls - CVE-2025-57790: Use default credentials to gain remote access
 during setup - CVE-2025-34028: Path traversal flaw, scoring CVSS 10.0
 
-Let's review what these CVEs involve: * Unauthenticated API calls - Execute
-webshells without authentication.  * Defaut credentials - Allows for RCE
-with default credentials * Path traversal flaw - This allows
-"unauthenticated access" to upload a ZIP file.
+Let's review what these CVEs involve:
+* Unauthenticated API calls - Execute webshells without authentication.
+* Defaut credentials - Allows for RCE with default credentials
+* Path traversal flaw - This allows "unauthenticated access" to upload a ZIP file.
 
 These are being actively exploited in the wild even today.  These aren't
 theoretical.  Some exploits chain these together into some quite impresive
