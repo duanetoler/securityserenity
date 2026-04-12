@@ -619,9 +619,10 @@ RFC 9110
 Unfortunately for CommVault, the malware warnings in RFC 7230 and 9110
 turned out to be somewhat prescient.  Last year, CISA added [CommVault CVEs](https://cvefeed.io/cisakev/cisa-known-exploited-vulnerability-catalog?search=commvault&ransomware=&order_by=date_added)
 to their KEV Catalog (Known Exploited Vulnerabilities) with one of the CVEs
-scoring a **10.0**.  Other CVEs include: - CVE-2025-57788: Unauthenticated
-API calls - CVE-2025-57790: Use default credentials to gain remote access
-during setup - CVE-2025-34028: Path traversal flaw, scoring CVSS 10.0
+scoring a **10.0**.  Other CVEs include:
+- CVE-2025-57788: Unauthenticated API calls
+- CVE-2025-57790: Use default credentials to gain remote access during setup
+- CVE-2025-34028: Path traversal flaw, scoring CVSS 10.0
 
 Let's review what these CVEs involve:
 * Unauthenticated API calls - Execute webshells without authentication.
