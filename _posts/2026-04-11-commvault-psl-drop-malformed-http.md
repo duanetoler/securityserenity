@@ -484,8 +484,8 @@ Remember that rabbit up above?  Let's go chase that now. 🐇
 
 sk183569 mentions RFC 2616. sk184133 mentions RFC 7230.
 
-### RFC 2616 — HTTP/1.1 (June 1999)
-[RFC 2616](http://rfc-editor.org/rfc/rfc2616) — the original HTTP/1.1 specification.
+### [RFC 2616](http://rfc-editor.org/rfc/rfc2616) — HTTP/1.1 (June 1999)
+The original HTTP/1.1 specification.
 
 That's definitive! What about the Host header? [Section 14.23](https://www.rfc-editor.org/rfc/rfc2616#section-14.23) says:
 
@@ -517,7 +517,7 @@ closing this connection.
 The story doesn't end for RFC-2616.  "Errata exist", it says, and it's been
 obsoleted by RFCs 7230-7235.  sk184133 calls out RFC-7230 explicitly.
 
-### RFC 7230 — HTTP/1.1: Message Syntax and Routing (June 2014) [RFC 7230](https://www.rfc-editor.org/rfc/rfc7230)
+### [RFC 7230](https://www.rfc-editor.org/rfc/rfc7230) — HTTP/1.1: Message Syntax and Routing (June 2014)
 
 TL;DR:  RFC-2616 was an omnibus HTTP 1/1 RFC with some errata, lack of
 clarity in places, and was getting difficult to expand HTTP while
@@ -575,8 +575,8 @@ Even though sk184133 doesn't say this, RFC7230 has already been obsoleted.
 This time, by RFCs 9110 and 9112.  Let's see if CommVault has a defense and
 check them out:
 
-### RFC 9110 and RFC 9112 — HTTP Semantics and HTTP/1.1 (June 2022) RFC 7230
-was itself obsoleted by [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110)
+### RFC 9110 and RFC 9112 — HTTP Semantics and HTTP/1.1 (June 2022)
+RFC 7230 was itself obsoleted by [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110)
 and [RFC 9112](https://www.rfc-editor.org/rfc/rfc9112).
 
 [RFC 9110 Section 7.2](https://www.rfc-editor.org/rfc/rfc9110#name-host-and-authority)
