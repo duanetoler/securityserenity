@@ -458,7 +458,7 @@ liability for arguably the most-sensitive application on your network.
 
 In fact, their own support article says so:
 
-![CommVault Firewall Requirements](_/assets/images/CommVault-Firewall-Requirements.png)
+![CommVault Firewall Requirements]( /assets/images/CommVault-Firewall-Requirements.png)
 
 [Source: CommVault documentation](https://documentation.commvault.com/11.42/software/configure_network_connectivity_for_commvault.html)
 
