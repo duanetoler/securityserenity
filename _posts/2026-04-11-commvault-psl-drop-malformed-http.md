@@ -517,8 +517,7 @@ closing this connection.
 The story doesn't end for RFC-2616.  "Errata exist", it says, and it's been
 obsoleted by RFCs 7230-7235.  sk184133 calls out RFC-7230 explicitly.
 
-### RFC 7230 — HTTP/1.1: Message Syntax and Routing (June 2014) [RFC
-7230](https://www.rfc-editor.org/rfc/rfc7230)
+### RFC 7230 — HTTP/1.1: Message Syntax and Routing (June 2014) [RFC 7230](https://www.rfc-editor.org/rfc/rfc7230)
 
 TL;DR:  RFC-2616 was an omnibus HTTP 1/1 RFC with some errata, lack of
 clarity in places, and was getting difficult to expand HTTP while
@@ -526,8 +525,7 @@ maintaining this document, so IETF split it in 6 smaller documents to
 address specific components of HTTP, including allowing flexibility for
 newer HTTP protocol variants (HTTP/2, at the time).
 
-What does RFC-7230 say about the Host header?  [Section
-5.4](https://www.rfc-editor.org/rfc/rfc7230#section-5.4) says:
+What does RFC-7230 say about the Host header?  [Section 5.4](https://www.rfc-editor.org/rfc/rfc7230#section-5.4) says:
 
 > A client MUST send a Host header field in all HTTP/1.1 request messages.
 
@@ -596,8 +594,7 @@ doesn't apply.  RFC 9110 repeats the same malware warning as RFC 7230.
 What about RFC 9112?
 
 [RFC 9112 Section 3.2](https://www.rfc-editor.org/rfc/rfc9112#section-3.2)
-says the same and defers to [RFC 9110 Section
-7.2](https://www.rfc-editor.org/rfc/rfc9110#name-host-and-authority).
+says the same and defers to [RFC 9110 Section 7.2](https://www.rfc-editor.org/rfc/rfc9110#name-host-and-authority).
 
 That's the end of the rabbit trail.  We hunted down all of the RFCs, in
 series.
@@ -619,8 +616,7 @@ privilege) - You are enabling the exact malware scenario called out in RFC
 7230 and RFC 9110
 
 Unfortunately for CommVault, the malware warnings in RFC 7230 and 9110
-turned out to be somewhat prescient.  Last year, CISA added [CommVault
-CVEs](https://cvefeed.io/cisakev/cisa-known-exploited-vulnerability-catalog?search=commvault&ransomware=&order_by=date_added)
+turned out to be somewhat prescient.  Last year, CISA added [CommVault CVEs](https://cvefeed.io/cisakev/cisa-known-exploited-vulnerability-catalog?search=commvault&ransomware=&order_by=date_added)
 to their KEV Catalog (Known Exploited Vulnerabilities) with one of the CVEs
 scoring a **10.0**.  Other CVEs include: - CVE-2025-57788: Unauthenticated
 API calls - CVE-2025-57790: Use default credentials to gain remote access
