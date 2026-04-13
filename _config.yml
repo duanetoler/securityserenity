@@ -5,3 +5,5 @@ author: Duane Toler
 theme: jekyll-theme-cayman
 show_excerpts: true
 show_downloads: false
+github:
+  is_project_page: false
