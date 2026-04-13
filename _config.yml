@@ -2,5 +2,5 @@ title: Security Serenity
 description: Because your firewall deserves better than "make an exception"
 url: "https://securityserenity.com"
 author: Duane Toler
-theme: minima
+theme: jekyll-theme-cayman
 show_excerpts: true
