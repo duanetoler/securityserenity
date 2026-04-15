@@ -24,6 +24,19 @@ to register
 
 ---
 
+> **📅 Update — April 2026:** CommVault has an updated MediaAgent 
+> version that includes the `Host:` header, bringing it into compliance with 
+> RFC 7230 and RFC 9110/9112. If you are running the updated version, this 
+> specific issue will be resolved. If you are still seeing `PSL Drop: WS` 
+> on an updated agent, continue reading — the diagnostic methodology still 
+> applies. If you are on an older agent version: upgrade, and remove any 
+> IPS exceptions.
+>
+> The historical context and RFC analysis below remain valid regardless of 
+> agent version.
+
+---
+
 ## What the Junior Admin Found
 
 The junior admin did some independent digging and got a suggestion to run a `zdebug` — 
@@ -467,9 +480,7 @@ In fact, their own support article says so:
 > - Use consistent port configurations across all nodes
 
 They want you to disable deep packet inspection because they know their HTTP
-headers are malformed and they clearly have no intention of fixing it. 
-There are other backup services that don't ask for such bypasses
-(Bacula/Bareos being one).  However, they also didn't expect someone like us
+headers are malformed.  They didn't expect someone like us
 would find out.  Open that CommVault TAC case and let them know that yes,
 you did notice.  They deserve to be called out for their willful violation
 of the HTTP RFCs.
